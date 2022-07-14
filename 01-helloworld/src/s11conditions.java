@@ -31,8 +31,8 @@ public class s11conditions {
 		
 		System.out.println("");
 		
-		int a = 10;
-		int b = 5;
+		int a = 3;
+		int b = 7;
 		int c = 20;
 		
 //		System.out.println("a < b = " + (a<b));
@@ -58,6 +58,19 @@ public class s11conditions {
 		
 		System.out.println("what will be the value ? " + (mybool=false));
 		
+		System.out.println("Value of a before OR conditions = " + a);
+		
+		// true && false = false
+		// true && true = true
+		// true || false = true
+		
+				
+		
+		
+		System.out.println("a < b OR a < c = " + (a<b || ++a<c));  // Logical OR
+		System.out.println(a);
+		System.out.println("a < b OR a < c = " + (a<b | ++a<c));  // Bitwise OR
+		System.out.println(a);
 	}
 
 }
