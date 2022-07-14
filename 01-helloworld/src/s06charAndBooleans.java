@@ -1,5 +1,5 @@
 
-public class charAndBooleans {
+public class s06charAndBooleans {
 
 	public static void main(String[] args) {
 		

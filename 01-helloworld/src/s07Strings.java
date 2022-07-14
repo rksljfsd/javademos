@@ -1,5 +1,5 @@
 
-public class Strings {
+public class s07Strings {
 
 	public static void main(String[] args) {
 
