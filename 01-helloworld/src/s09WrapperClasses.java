@@ -14,8 +14,8 @@ public class s09WrapperClasses {
 		int myint = z;		 // converting automatically- auto unboxing
 		myint = z.intValue();  // convert explicitly from wrapper to primitve
 		
-		short y = 3276;
-		Short newshort = y;
+		short yshort = 3276;
+		Short newshort = yshort;
 	}
 	
 }
