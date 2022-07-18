@@ -10,7 +10,7 @@ public class s05floatsAndDoubles {
 		
 		int val = 5;
 		
-		float val2 = 5.25f;
+		float val2 = (float) 5.25;
 		
 		double val3 = 5.26;
 		

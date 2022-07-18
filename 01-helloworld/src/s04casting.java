@@ -24,8 +24,14 @@ public class s04casting {
 		
 		System.out.println(b1);
 		
+		byte xb1 = 2;
+		byte xb2 = 3;
+		byte result = (byte) (xb1+xb2);
 		
 		
+		int i3 = 10;
+		int i2 = 20;
+		int xresult = i3+i2;
 		
 	}
 

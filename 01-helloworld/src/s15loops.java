@@ -16,12 +16,12 @@ public class s15loops {
 //			System.out.println("Value of i = " + i);
 //		}
 //		
-//		for (int i = 1; i <= 10; i++) {
-//			for (int j = 1; j <= i; j++) {
-//				System.out.print("*");
-//			}
-//			System.out.println();
-//		}
+		for (int i = 1; i <= 10; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println(i);
+		}
 
 		// print all even numbers between 22 to 98
 //
@@ -38,21 +38,21 @@ public class s15loops {
 		// find the sum of all numbers divided by 3 and 5 between 1 to 100
 		// sum only the first 5 numbers that satisfies the above criteria
 		
-		int sum = 0;
-		int count = 0;
-		for (int i = 1; i< 100; i++) {
-			if ( (i % 3 == 0) && (i % 5 ==0)) {
-				sum += i;
-				count++;
-			}
-			if (count == 5) {
-				break;
-			} else {
-				continue;
-			}
-		}
-		System.out.println("sum = " + sum);
-		System.out.println("total numbers that satisfies the criteria = " + count);
+//		int sum = 0;
+//		int count = 0;
+//		for (int i = 1; i< 100; i++) {
+//			if ( (i % 3 == 0) && (i % 5 ==0)) {
+//				sum += i;
+//				count++;
+//			}
+//			if (count == 5) {
+//				break;
+//			} else {
+//				continue;
+//			}
+//		}
+//		System.out.println("sum = " + sum);
+//		System.out.println("total numbers that satisfies the criteria = " + count);
 	}
 
 }

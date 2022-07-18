@@ -1,5 +1,7 @@
 
 public class s11conditions {
+	
+	private final int myint = 10;
 
 	public static void main(String[] args) {
 		
