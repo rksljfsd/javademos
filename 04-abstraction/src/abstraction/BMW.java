@@ -1,5 +1,7 @@
 package abstraction;
 
+import fullabstraction.Car;
+
 public abstract class BMW {
 
 	void commonFunctionality() {
