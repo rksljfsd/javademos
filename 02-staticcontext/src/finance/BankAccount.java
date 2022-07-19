@@ -3,9 +3,21 @@ package finance;
 public class BankAccount {
 	
 	int accountNumber;
-	int balanceTotal;
+	private int balanceTotal;
 	static String bankName = "SBI";
 	static double interestRate = 7.2;
+	
+	{
+		System.out.println("This is a bank account");
+	}
+	
+	public void withdrawMoney(int amount) {
+		this.balanceTotal -= amount;
+	}
+	
+	public void depositMoney(int amount) {
+		this.balanceTotal += amount;
+	}
 	
 	// default constructor
 	public BankAccount(int accountNum, int total) {
