@@ -7,7 +7,7 @@ public class Child extends Parent{
 	}
 	
 	Child(int x) {
-		super(x);
+//		super(x);
 		System.out.println("Child Constructor: One Arg");
 	}
 
