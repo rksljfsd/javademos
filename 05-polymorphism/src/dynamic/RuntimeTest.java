@@ -5,14 +5,21 @@ public class RuntimeTest {
 	public static void main(String[] args) {
 		
 		MacBookPro pro = new MacBookPro();
-		operateMac(pro);
+		pro.start();
+//		operateMac(pro);
 		
 		MacBookAir air = new MacBookAir();
-		operateMac(air);
+//		operateMac(air);
+		
+		MacBook obj = new MacBookPro();
+		obj.start();
+		obj.shutdown();
+		
+		(new RuntimeTest()).operateMac(air);
 		
 	}
 	
-	static void operateMac(MacBook mac) {
+	void operateMac(MacBook mac) {
 		mac.start();
 		mac.shutdown();
 	}
