@@ -12,4 +12,8 @@ public class MacBookPro extends MacBook {
 		System.out.println("Inside MacbookPro shutdown()");
 	}
 	
+	void prosmethod() {
+		System.out.println("Inside MacbookPro prosmethod");
+	}
+	
 }
