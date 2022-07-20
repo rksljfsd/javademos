@@ -3,6 +3,12 @@ package abstraction;
 import fullabstraction.Car;
 
 public abstract class BMW {
+	
+	BMW() {
+		
+	}
+	
+	int x;
 
 	void commonFunctionality() {
 		System.out.println("Inside common functionality method");
