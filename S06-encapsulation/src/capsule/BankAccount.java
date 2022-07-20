@@ -6,6 +6,10 @@ public class BankAccount {
 	private int accountNumber;
 	private int balanceTotal;
 	
+	BankAccount(int balance) {
+		this.balanceTotal = balance;
+	}
+	
 	public void setAccountName(String name) {
 		this.accountName = name;
 	}
@@ -16,6 +20,14 @@ public class BankAccount {
 		} else {
 			this.accountNumber = num;
 		}
+	}
+	
+	public void withdrawMoney(int amount) {
+		this.balanceTotal -= amount;
+	}
+	
+	public void depositMoney(int amount) {
+		this.balanceTotal += amount;
 	}
 	
 	void printDetails() {

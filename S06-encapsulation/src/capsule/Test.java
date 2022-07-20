@@ -12,10 +12,11 @@ public class Test {
 		student.printDetails();
 		
 		// writeonly object
-		BankAccount acc = new BankAccount();
+		BankAccount acc = new BankAccount(10000);
 		acc.setAccountName("XYZ");
 		acc.setAccountNumber(-2);
-//		acc.setBalanceTotal(1000);
+		acc.depositMoney(3000);
+		acc.withdrawMoney(4000);
 		acc.printDetails();
 		
 		// readonly object
