@@ -16,7 +16,7 @@ public class JoinDemo extends Thread {
 		jd.start();
 		
 		try {
-			jd.join();
+			jd.join();			
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
