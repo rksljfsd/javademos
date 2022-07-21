@@ -5,10 +5,14 @@ import java.io.FileNotFoundException;
 
 public class CheckedExceptionDemo {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args)  {
 		
 		CheckedExceptionDemo obj = new CheckedExceptionDemo();
-		obj.readFromFile();
+		try {
+			obj.readFromFile();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 
 	}
 
