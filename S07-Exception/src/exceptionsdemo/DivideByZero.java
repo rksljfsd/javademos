@@ -10,10 +10,10 @@ public class DivideByZero {
 
 		System.out.println("Enter two integers:");
 
+		Scanner scanner = new Scanner(System.in);
+		a = scanner.nextInt();
+		b = scanner.nextInt();
 		try {
-			Scanner scanner = new Scanner(System.in);
-			a = scanner.nextInt();
-			b = scanner.nextInt();
 			c = a / b;
 			d = a % b;
 			System.out.println(a + " / " + b + " = " + c + ", Remainder = " + d);
