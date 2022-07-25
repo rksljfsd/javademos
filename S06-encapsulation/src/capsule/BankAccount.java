@@ -33,7 +33,5 @@ public class BankAccount {
 	void printDetails() {
 		System.out.println("BankAccount: accountName="+accountName+", accountNumber="+accountNumber+", balanceTotal="+balanceTotal);
 	}
-	
-	
 
 }
