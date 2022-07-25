@@ -11,6 +11,8 @@ public class ObejctComparison {
 		System.out.println(user1 == user2);
 		System.out.println(user1.equals(user2));
 		
+		
+		
 	}
 	
 }
