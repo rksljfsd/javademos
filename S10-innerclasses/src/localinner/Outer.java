@@ -6,7 +6,7 @@ public class Outer {
 		System.out.println("Inside Outer.f1() method");
 		
 		class LocalInner {
-			void f2() {
+			private void f2() {
 				System.out.println("Inside LocalInner.f2() method");
 			}
 		}
