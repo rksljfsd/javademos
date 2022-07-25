@@ -18,7 +18,7 @@ public class Test {
 		
 		ExecutorService service = Executors.newFixedThreadPool(3);
 		for (Worker worker : workers) {
-			Future<Integer> future = service.submit(worker);
+			Future<Integer> future = service.submit(worker);		// int total = worker.call(4);
 			try {
 				Integer total = future.get();
 				System.out.println("sum of : " + worker.getNum() + " = " + total);
