@@ -1,3 +1,5 @@
+package bufferedreader;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,10 +16,7 @@ public class BufferedReaderDemo {
 		int count = 0;
 		while ( (line = br.readLine()) != null) {
 			StringTokenizer st = new StringTokenizer(line);
-			while (st.hasMoreTokens()) {
-				count++;
-				st.nextToken();
-			}
+			count += st.countTokens();
 		}
 		br.close();
 		fr.close();
