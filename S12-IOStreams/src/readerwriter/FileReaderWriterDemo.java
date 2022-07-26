@@ -9,13 +9,14 @@ public class FileReaderWriterDemo {
 	
 	public static void main(String[] args) throws IOException {
 		
-		FileReader fr = new FileReader("C:\\\\javafsd\\\\temp\\\\test.txt");
+		FileReader fr = new FileReader("C:\\\\javafsd\\\\temp\\\\tESt.txt");
 		FileWriter fw = new FileWriter("C:\\\\javafsd\\\\temp\\\\testwriter.txt");
 		
 		int ch;
 		while ( (ch = fr.read()) != -1) {
 			fw.write(ch);
 		}
+		System.out.println(fr);
 		fr.close();
 		fw.close();
 	}

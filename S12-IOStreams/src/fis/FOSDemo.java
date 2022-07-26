@@ -9,15 +9,13 @@ import java.io.IOException;
 public class FOSDemo {
 
 	public static void main(String[] args) {
-		File myfile = new File("C:\\javafsd\\temp\\test-out.txt");
+		File myfile = new File("C:\\javafsd\\temp\\tESt-outer.txt");
 		FileOutputStream fos = null;
 		try {
 			fos = new FileOutputStream(myfile);
 			System.out.println("File successfully opened");
 			String data = "hello world";
 			fos.write(data.getBytes());
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {

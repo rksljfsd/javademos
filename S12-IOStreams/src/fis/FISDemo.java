@@ -9,7 +9,7 @@ public class FISDemo {
 
 	public static void main(String[] args) {
 		
-		File myfile = new File("C:\\javafsd\\temp\\test.txt");
+		File myfile = new File("C:\\javafsd\\temp\\tESt.txt");
 		FileInputStream fis = null;
 		int count =0;
 		try {
