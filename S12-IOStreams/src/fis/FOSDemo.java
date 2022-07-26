@@ -3,38 +3,30 @@ package fis;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class FISDemo {
+public class FOSDemo {
 
 	public static void main(String[] args) {
-		
-		File myfile = new File("C:\\javafsd\\temp\\test.txt");
-		FileInputStream fis = null;
-		int count =0;
+		File myfile = new File("C:\\javafsd\\temp\\test-out.txt");
+		FileOutputStream fos = null;
 		try {
-			fis = new FileInputStream(myfile);
+			fos = new FileOutputStream(myfile);
 			System.out.println("File successfully opened");
-			int i;
-			while ( (i = fis.read()) != -1) {
-				count++;
-				System.out.print((char) i);
-			}
+			String data = "hello world";
+			fos.write(data.getBytes());
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
 			try {
-				fis.close();
+				fos.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 			System.out.println("File closed");
-			System.out.println("Total bytes read: " + count);
 		}
-		
-		
 	}
-	
 }

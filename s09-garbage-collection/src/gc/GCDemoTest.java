@@ -12,7 +12,9 @@ public class GCDemoTest{
 		Object obj1 = new Employee(3);
 		Object obj2 = new Employee(4);
 		
-		System.gc();
+//		System.gc();
+		
+		// create a million objects in a for loop
 		
 		
 	}
