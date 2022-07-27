@@ -25,7 +25,7 @@ public class UsingArrays {
 			System.out.println(element);
 		}
 		
-		
+//		1,2,3,4,5,6,9,3,45,7,8,24,4,6,7,7,7,
 		
 	}
 
