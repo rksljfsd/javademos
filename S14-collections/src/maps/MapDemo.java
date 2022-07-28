@@ -1,5 +1,6 @@
 package maps;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,7 +37,8 @@ public class MapDemo {
 		Set<String> keys = users.keySet();
 		System.out.println(keys);
 		
-		Collection<String> values = users.values();
+		ArrayList<String> values = (ArrayList<String>) users.values();
+		System.out.println(values.getClass());
 		System.out.println(values);
 		
 		for (String key : keys) {
