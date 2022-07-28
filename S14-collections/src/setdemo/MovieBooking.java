@@ -23,7 +23,7 @@ public class MovieBooking implements Comparable<MovieBooking> {
 	}
 
 	public String toString() {
-		return "\nUser: " + userName + ",MovieName: " + this.movieName + ",Time: " + this.showTime + ", Tickets: "
+		return "\nUser: " + userName + ",MovieName: " + this.movie.name + ",Time: " + this.showTime + ", Tickets: "
 				+ mytickets;
 	}
 
